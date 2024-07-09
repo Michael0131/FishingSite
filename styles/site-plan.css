@@ -68,8 +68,12 @@ nav a:hover {
   text-decoration: underline;
   
 }
+:root {
+  --gray: #808080; /* Define your gray color here */
+}
+
 nav a:link, nav a:visited {
-  color: var(gray);
+  color: var(--gray);
 }
 nav {  
   /* line-height: 3em; */
@@ -116,10 +120,7 @@ nav {
   padding: 0 20px;
   padding-bottom:40px;
 }
-.main-img {
-  columns: 2/3;
 
-}
 
 .title , .author {
   display: grid;
