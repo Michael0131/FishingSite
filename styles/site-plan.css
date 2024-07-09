@@ -61,11 +61,15 @@ nav a {
   
 }
 nav a:hover {
-  background-color: gainsboro;
+  
   text-align: center;
   width: auto;
-  height: 150px
+  height: 150px;
+  text-decoration: underline;
   
+}
+nav a:link, nav a:visited {
+  color: var(gray);
 }
 nav {  
   /* line-height: 3em; */
