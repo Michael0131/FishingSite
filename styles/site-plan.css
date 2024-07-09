@@ -29,11 +29,11 @@ Fonts are separated by a | */
   --nav-hover-background-color: #393424;
 }
 
-.home-page {
+.home-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  
-
+  gap: 20px;
+  align-items: start;
 }
 nav {
   display: flex;
@@ -98,7 +98,7 @@ nav {
   
 }
 
-.fish1 {
+/* .fish1 {
   grid-column: 1/2;
 }
 .fish2 {
@@ -109,7 +109,7 @@ nav {
 }
 .fish4 {
   grid-column: 4/5;
-}
+} */
 .image-assortment {
   display: flex;
   justify-content: space-between;
@@ -120,26 +120,75 @@ nav {
   columns: 2/3;
 
 }
-/* .title-section {
-  display: grid;
-  font-size: xx-large;
-  justify-content: center;
-  text-align: center;
-  grid-row: 1;
-} */
+
 .title , .author {
   display: grid;
-  font-size: xx-large;
   justify-content: center;
   text-align: center;
   grid-row: 1;
 
+}
+.title {
+  font-size: 400%;
+}
+.author {
+  font-size: x-large;
+  padding-bottom: 200px;
 }
 .title-section .logo {
   justify-items: left;
 }
 .welcome-paragraph {
   font-size: x-large;
+  grid-column: 1 / 2;
+  margin-bottom: 20px; /* Adds spacing below the paragraph */
+  line-height: 1.6; /* Adjusts line height for readability */
+}
+
+.main-img {
+  grid-column: 2 / 3;
+  justify-content: center;
+  padding-bottom: 100px;
+  
+}
+
+.map {
+  border: 7.5px #393424;
+  max-width: 100%;
+  height: auto;
+}
+.rocky-border {
+  border: 20px solid;
+  border-image: url('images/cropped-rocky-border.png') 30 round; /* Adjust the path to your saved rocky border image */
+  padding: 10px; /* Optional: Adjust padding as needed */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Optional: Adds a shadow for depth */
+}
+
+/* Other existing styles */
+.home-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: start;
+}
+
+.welcome-paragraph {
+  font-size: x-large;
+  grid-column: 1 / 2;
+  margin-bottom: 20px; /* Adds spacing below the paragraph */
+  line-height: 1.6; /* Adjusts line height for readability */
+}
+
+.main-img {
+  grid-column: 2 / 3;
+}
+
+.map {
+  max-width: 100%;
+  height: auto;
+  /* Apply the rocky border class */
+  border: 20px solid;
+  border-image: url('images/cropped-rocky-border.png') 30 round;
 }
 
 
