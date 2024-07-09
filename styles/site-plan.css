@@ -120,5 +120,26 @@ nav {
   columns: 2/3;
 
 }
+/* .title-section {
+  display: grid;
+  font-size: xx-large;
+  justify-content: center;
+  text-align: center;
+  grid-row: 1;
+} */
+.title , .author {
+  display: grid;
+  font-size: xx-large;
+  justify-content: center;
+  text-align: center;
+  grid-row: 1;
+
+}
+.title-section .logo {
+  justify-items: left;
+}
+.welcome-paragraph {
+  font-size: x-large;
+}
 
 
