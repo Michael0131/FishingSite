@@ -28,6 +28,9 @@ Fonts are separated by a | */
   --nav-background-color: #A9ACA9;
   --nav-hover-background-color: #393424;
 }
+body {
+  background-color: burlywood; /* Set the background color of the entire page */
+}
 
 .home-grid {
   display: grid;
