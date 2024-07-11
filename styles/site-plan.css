@@ -95,7 +95,7 @@ nav {
   border-radius: 25px;
   border: 7.5px solid black;
   padding: 0px;
-  width: 23%; /* Set the width as a percentage in CSS */
+  width: 25em; /* Set the width as a percentage in CSS */
   height: auto; /* Allow the height to adjust automatically */
 }
 
