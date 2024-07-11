@@ -88,13 +88,15 @@ nav {
   font-weight: bold;
 }
 .footer-words a {
-  margin-right: 12em; /* Adjust the value as needed for spacing */
+  margin-right: 2.5em; /* Adjust the value as needed for spacing */
   font-size: x-large;
 }
-.fish1, .fish2, .fish3, .fish4 {
+.fish {
   border-radius: 25px;
   border: 7.5px solid black;
   padding: 0px;
+  width: 23%; /* Set the width as a percentage in CSS */
+  height: auto; /* Allow the height to adjust automatically */
 }
 
 .image-assortment {
@@ -115,7 +117,7 @@ nav {
 }
 .author {
   font-size: x-large;
-  padding-bottom: 200px;
+  padding-bottom: 3em;
 }
 .title-section .logo {
   justify-items: left;
@@ -125,17 +127,19 @@ nav {
   grid-column: 1 / 2;
   margin-bottom: 20px; /* Adds spacing below the paragraph */
   line-height: 1.6; /* Adjusts line height for readability */
+  padding-left: 5%;
+  padding-right: 3%;
 }
 
 .main-img {
   grid-column: 2 / 3;
+  display: flex;
   justify-content: center;
+  align-items: center;
   padding-bottom: 100px;
 }
 
-.map {
-  border: 7.5px #393424;
+.main-img img {
   max-width: 100%;
   height: auto;
 }
-
