@@ -95,7 +95,7 @@ nav {
   border-radius: 25px;
   border: 7.5px solid black;
   padding: 0px;
-  width: 23.5vw; /* Set the width as a percentage in CSS */
+  width: 25vw; /* Set the width as a percentage in CSS */
   height: auto; /* Allow the height to adjust automatically */
 }
 
@@ -137,6 +137,6 @@ nav {
   justify-content: center;
   align-items: center;
   padding-bottom: 100px;
-  width: 50vw;
+  width: 75vw;
   height: auto;
 }
