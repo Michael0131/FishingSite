@@ -139,9 +139,3 @@ nav {
   height: auto;
 }
 
-.rocky-border {
-  border: 20px solid;
-  border-image: url('images/cropped-rocky-border.png') 30 round; /* Adjust the path to your saved rocky border image */
-  padding: 10px; /* Optional: Adjust padding as needed */
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Optional: Adds a shadow for depth */
-}
