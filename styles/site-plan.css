@@ -91,7 +91,7 @@ nav {
   margin-right: 2.5em; /* Adjust the value as needed for spacing */
   font-size: x-large;
 }
-.fish {
+.fish1, .fish2 , .fish3 , .fish4 {
   border-radius: 25px;
   border: 7.5px solid black;
   padding: 0px;
