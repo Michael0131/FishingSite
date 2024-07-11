@@ -71,7 +71,7 @@ nav a:hover {
 }
 
 nav a:link, nav a:visited {
-  color: var(--gray);
+  color: black;
 }
 nav {  
   /* line-height: 3em; */
