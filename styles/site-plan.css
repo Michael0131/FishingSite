@@ -195,4 +195,52 @@ nav {
   border-image: url('images/cropped-rocky-border.png') 30 round;
 }
 
+/* --------------------------------------------------------------------------
+                                Start Gear Page */
+
+
+
+/* @for $i from 1 through 10 {
+  #gear-#{$i} {
+    /* Your CSS styles here */
+
+.gear-item {
+  width : 45em;
+  height: 40em;
+  justify-content: center;
+  border-radius: 5%;
+  border: solid black;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+.title-section {
+  text-align: center;
+  padding-top: 1rem;
+  font-size: 300%;
+  border-width: 1rem;
+}
+.gear-intro {
+  padding-top: 2.5em;
+  font-size: xx-large;
+  margin: 75px;
+  padding-bottom: 1.5em;
+}
+
+.gear-title {
+  font-size: 300%;
+  padding-left: 2em;
+  padding-bottom: 1.5em;
+  padding-top: 1.5em;
+  border-bottom: solid black .25em;
+
+}
+.gear-paragraph {
+  padding-top: 1em;
+  font-size: xx-large;
+  text-align: center;
+  margin: 4.5em;
+
+}
 
