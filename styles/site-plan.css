@@ -1,76 +1,69 @@
-/* if you are using any Google fonts change the font names below to your fonts. 
-Any spaces in your font name should be replaced with a +. 
-Fonts are separated by a | */
+/* Font imports */
 @import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato');
-@import url("https://fonts.google.com/share?selection.family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900|Oswald:wght@200..700");
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bitter:ital,wght@0,100..900;1,100..900&family=Cactus+Classical+Serif&family=Danfo&family=Karla:ital,wght@0,200..800;1,200..800&family=Sedan+SC&family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900|Oswald:wght@200..700');
+
+/* Root variables */
 :root {
-  /* change the values below to your colors from your palette */
-  --primary-color: #A9ACA9  ;
-  --secondary-color: #393424 ;
+  /* Change the values below to your colors from your palette */
+  --primary-color: #A9ACA9;
+  --secondary-color: #393424;
   /* --accent1-color: #BA3F1D; */
   --accent2-color: white;
 
-  /* change the values below to your chosen font(s) */
-  --heading-font: Oswald, sans-serif ;
+  /* Change the values below to your chosen font(s) */
+  --heading-font: Oswald, sans-serif;
   --paragraph-font: Barlow, Helvetica, sans-serif;
 
-  /* --heading-font: Sedan+SC, sans-serif ;
-  --paragraph-font: Karla, Helvetica, sans-serif; */
-
-  /* these colors below should be chosen from among your palette colors above */
-  --headline-color-on-white: #393424;  /* headlines on a white background */ 
-  --headline-color-on-color: white; /* headlines on a colored background */ 
-  --paragraph-color-on-white: #393424;/* paragraph text on a colored background */ 
-  /* --paragraph-background-color: #BA3F1D  ; */
+  /* These colors below should be chosen from among your palette colors above */
+  --headline-color-on-white: #393424;  /* Headlines on a white background */
+  --headline-color-on-color: white;   /* Headlines on a colored background */
+  --paragraph-color-on-white: #393424; /* Paragraph text on a colored background */
+  /* --paragraph-background-color: #BA3F1D; */
   --nav-link-color: #396E94;
   --nav-hover-link-color: white;
   --nav-background-color: #A9ACA9;
   --nav-hover-background-color: #393424;
 }
+
 body {
   background-color: burlywood; /* Set the background color of the entire page */
+  font-family: 'Lato', sans-serif; /* Fallback font */
 }
 
 .home-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 20px;
+  gap: 10px; /* Halved the gap */
   align-items: start;
+  padding: 10px; /* Halved the padding */
 }
+
 nav {
   display: flex;
   border-radius: 10px;
   text-align: center;
-  
+  border: 2.5px solid black; /* Halved the border */
+  padding: 5px; /* Halved the padding */
 }
+
 .logo {
-  width: 150px;
-  height: 150px;
-  align-items: center;
-  border-radius: 10px;
-  padding: 0px;
+  width: 75px; /* Halved the width */
+  height: 75px; /* Halved the height */
+  border-radius: 5px; /* Halved the border-radius */
 }
 
 nav a {
   text-align: center;
   color: black;
   text-decoration: none;
-  padding: 0px;
-  border-radius: 10px;
-  text-align: center;
-  height: 150px;
-  
-  
+  padding: 5px; /* Halved the padding */
+  border-radius: 5px; /* Halved the border-radius */
 }
+
 nav a:hover {
-  
-  text-align: center;
-  width: auto;
-  height: 150px;
   text-decoration: underline;
-  
 }
+
 :root {
   --gray: #808080; /* Define your gray color here */
 }
@@ -78,169 +71,115 @@ nav a:hover {
 nav a:link, nav a:visited {
   color: var(--gray);
 }
-nav {  
-  /* line-height: 3em; */
-  text-align: center;
-  /* font-size: 1.2em; */
-  text-align: center;
-  border-radius: 20px;
-  border: 5px solid black;
-  
-}
+
 .footer-words {
   color: black;
-  padding-top: 70px;
-  margin-left: 100px;
+  padding-top: 35px; /* Halved the padding */
+  margin-left: 50px; /* Halved the margin */
   font-weight: bold;
-  
-}
-.footer-words a {
-  margin-right: 12em; /* Adjust the value as needed for spacing */
-  font-size: x-large;
-}
-.fish1 , .fish2 , .fish3 ,.fish4 {
-  border-radius: 25px;
-  border: 7.5px solid black;
-  padding: 0px;
-  
 }
 
-/* .fish1 {
-  grid-column: 1/2;
+.footer-words a {
+  margin-right: 6em; /* Halved the margin */
+  font-size: large; /* Adjusted font size */
 }
-.fish2 {
-  grid-column: 2/3;
+
+.fish1, .fish2, .fish3, .fish4 {
+  border-radius: 12.5px; /* Halved the border-radius */
+  border: 3.75px solid black; /* Halved the border */
+  padding: 0; /* Reset padding */
 }
-.fish3 {
-  grid-column: 3/4;
-}
-.fish4 {
-  grid-column: 4/5;
-} */
+
 .image-assortment {
   display: flex;
   justify-content: space-between;
-  padding: 0 20px;
-  padding-bottom:40px;
+  padding: 0 10px; /* Halved the padding */
+  padding-bottom: 20px; /* Halved the padding */
 }
 
-
-.title , .author {
+.title, .author {
   display: grid;
   justify-content: center;
   text-align: center;
   grid-row: 1;
+}
 
-}
 .title {
-  font-size: 400%;
+  font-size: 200%; /* Adjusted font size */
 }
+
 .author {
-  font-size: x-large;
-  padding-bottom: 200px;
+  font-size: large; /* Adjusted font size */
+  padding-bottom: 100px; /* Halved the padding */
 }
+
 .title-section .logo {
   justify-items: left;
 }
+
 .welcome-paragraph {
-  font-size: x-large;
+  font-size: large; /* Adjusted font size */
   grid-column: 1 / 2;
-  margin-bottom: 20px; /* Adds spacing below the paragraph */
+  margin-bottom: 10px; /* Halved the margin */
   line-height: 1.6; /* Adjusts line height for readability */
 }
 
 .main-img {
   grid-column: 2 / 3;
   justify-content: center;
-  padding-bottom: 100px;
-  
+  padding-bottom: 50px; /* Halved the padding */
 }
 
 .map {
-  border: 7.5px #393424;
+  border: 3.75px #393424; /* Halved the border */
   max-width: 100%;
   height: auto;
 }
+
 .rocky-border {
-  border: 20px solid;
-  border-image: url('images/cropped-rocky-border.png') 30 round; /* Adjust the path to your saved rocky border image */
-  padding: 10px; /* Optional: Adjust padding as needed */
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Optional: Adds a shadow for depth */
+  border: 10px solid;
+  border-image: url('images/cropped-rocky-border.png') 15 round; /* Adjusted border image */
+  padding: 5px; /* Halved the padding */
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5); /* Halved the box shadow */
 }
 
-/* Other existing styles */
-.home-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-  align-items: start;
-}
-
-.welcome-paragraph {
-  font-size: x-large;
-  grid-column: 1 / 2;
-  margin-bottom: 20px; /* Adds spacing below the paragraph */
-  line-height: 1.6; /* Adjusts line height for readability */
-}
-
-.main-img {
-  grid-column: 2 / 3;
-}
-
-.map {
-  max-width: 100%;
-  height: auto;
-  /* Apply the rocky border class */
-  border: 20px solid;
-  border-image: url('images/cropped-rocky-border.png') 30 round;
-}
-
-/* --------------------------------------------------------------------------
-                                Start Gear Page */
-
-
-
-/* @for $i from 1 through 10 {
-  #gear-#{$i} {
-    /* Your CSS styles here */
+/* Start Gear Page styles */
 
 .gear-item {
-  width : 45em;
-  height: 40em;
+  width: 22.5em; /* Halved the width */
+  height: 20em; /* Halved the height */
   justify-content: center;
-  border-radius: 5%;
+  border-radius: 2.5%; /* Halved the border-radius */
   border: solid black;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-
+  margin: 0 auto; /* Centered the element */
 }
+
 .title-section {
   text-align: center;
-  padding-top: 1rem;
-  font-size: 300%;
-  border-width: 1rem;
+  padding-top: 0.5rem; /* Halved the padding */
+  font-size: 150%; /* Adjusted font size */
+  border-width: 0.5rem; /* Halved the border width */
 }
+
 .gear-intro {
-  padding-top: 2.5em;
-  font-size: xx-large;
-  margin: 75px;
-  padding-bottom: 1.5em;
+  padding-top: 1.25em; /* Halved the padding */
+  font-size: large; /* Adjusted font size */
+  margin: 37.5px; /* Halved the margin */
+  padding-bottom: 0.75em; /* Halved the padding */
 }
 
 .gear-title {
-  font-size: 300%;
-  padding-left: 2em;
-  padding-bottom: 1.5em;
-  padding-top: 1.5em;
-  border-bottom: solid black .25em;
-
+  font-size: 150%; /* Adjusted font size */
+  padding-left: 1em; /* Halved the padding */
+  padding-bottom: 0.75em; /* Halved the padding */
+  padding-top: 0.75em; /* Halved the padding */
+  border-bottom: solid black 0.125em; /* Halved the border thickness */
 }
+
 .gear-paragraph {
-  padding-top: 1em;
-  font-size: xx-large;
+  padding-top: 0.5em; /* Halved the padding */
+  font-size: large; /* Adjusted font size */
   text-align: center;
-  margin: 4.5em;
-
+  margin: 2.25em; /* Halved the margin */
 }
-
