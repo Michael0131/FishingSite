@@ -183,3 +183,10 @@ nav a:link, nav a:visited {
   text-align: center;
   margin: 2.25em; /* Halved the margin */
 }
+.footer-info, .footer-title {
+  margin: 1em;
+  padding-top: 2em
+}
+.footer-info {
+  padding-bottom: 4em;
+}
