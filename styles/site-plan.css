@@ -169,7 +169,6 @@ nav a:link, nav a:visited {
   padding-bottom: 0.75em; /* Halved the padding */
 }
 
-<<<<<<< HEAD
 .gear-title, .species-title{
   font-size: 300%;
   padding-left: 2em;
@@ -177,14 +176,6 @@ nav a:link, nav a:visited {
   padding-top: 1.5em;
   border-bottom: solid black .25em;
 
-=======
-.gear-title {
-  font-size: 150%; /* Adjusted font size */
-  padding-left: 1em; /* Halved the padding */
-  padding-bottom: 0.75em; /* Halved the padding */
-  padding-top: 0.75em; /* Halved the padding */
-  border-bottom: solid black 0.125em; /* Halved the border thickness */
->>>>>>> 9ea2cdea335409c0677a21da7775a5af2f34f3e3
 }
 
 .gear-paragraph {
@@ -193,7 +184,6 @@ nav a:link, nav a:visited {
   text-align: center;
   margin: 2.25em; /* Halved the margin */
 }
-<<<<<<< HEAD
 
 /* ------------------------------------------ SPECIES PAGE ------------------------------------------------------------------ */
 
@@ -243,12 +233,3 @@ nav a:link, nav a:visited {
   grid-column: 1/2;
 }
 
-=======
-.footer-info, .footer-title {
-  margin: 1em;
-  padding-top: 2em
-}
-.footer-info {
-  padding-bottom: 4em;
-}
->>>>>>> 9ea2cdea335409c0677a21da7775a5af2f34f3e3
