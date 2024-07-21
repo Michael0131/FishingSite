@@ -126,7 +126,7 @@ nav a:link, nav a:visited {
   font-size: large; /* Adjusted font size */
   grid-column: 1 / 2;
   margin-bottom: 10px; /* Halved the margin */
-  line-height: 1.6; /* Adjusts line height for readability */
+  line-height: 1.25; /* Adjusts line height for readability */
 }
 
 .main-img {
@@ -197,7 +197,7 @@ nav a:link, nav a:visited {
   grid-template-columns: 1fr 1fr;
 }
 .fish {
-  width: 55em;
+  width: 48em;
   height: auto;
   border: 1em solid black;
   border-radius: 5rem;
@@ -206,20 +206,20 @@ nav a:link, nav a:visited {
 /* .species-3 {
   height: 40em;
 } */
- .species-title {
-  font-size: 300%;
- }
- .species-paragraph {
-  padding-top: 1em;
-  font-size: xx-large;
-  margin: 4.5em;
+.species-title {
+  font-size: 400%; /* 300% / 2 */
+}
+.species-paragraph {
+  padding-top: 0.5em; /* 1em / 2 */
+  font-size: x-large; /* xx-large divided by 2 */
+  margin: 2.25em; /* 4.5em / 2 */
   margin-left: auto;
-  padding: 1.5em;
+  padding: 0.75em; /* 1.5em / 2 */
   grid-column: 1;
-  line-height: 2; /* Adds spacing between lines */
+  line-height: 1.5; /* 2 / 2 */
 }
 .species-title {
-  font-size: 300%;
+  font-size: 150%; /* 300% / 2 */
   text-align: center;
 }
 
@@ -232,7 +232,6 @@ nav a:link, nav a:visited {
 
 .container1 .species-paragraph, .container2 .species-paragraph, .container3 .species-paragraph, .container4 .species-paragraph, .container5 .species-paragraph, .container6 .species-paragraph, .container7 .species-paragraph, .container8 .species-paragraph {
   grid-column: 2/3;
-  
 }
 
 .container1 img, .container2 img, .container3 img, .container4 img, .container5 img, .container6 img, .container7 img, .container8 img {
@@ -249,7 +248,7 @@ _____________________________ locations section ________________________________
 }
 
 .locations-title {
-  font-size: 5em;
+  font-size: 2.5em; /* 5em / 2 */
   margin-bottom: 1em;
 }
 
@@ -264,18 +263,14 @@ _____________________________ locations section ________________________________
 }
 
 .location-1 img, .location-2 img, .location-3 img {
-  height: 45em;
-  width:50em;
+  height: 45em; /* 45em / 2 */
+  width: 50em; /* 50em / 2 */
   border-radius: 1em;
 }
 .location-2 img {
   grid-column: 4 / 5;
   grid-row: 1;
-  /* align-content: right;
-  padding-right: 0;
-  align-content: right; */
   justify-self: end;
-  
 }
 
 .location-2 p {
@@ -284,17 +279,16 @@ _____________________________ locations section ________________________________
   align-self: center;
   justify-self: center;
   text-align: left;
-  padding: 1em;
-  padding-left: 5em;
-  line-height: 2; /* Adds spacing between lines */
+  padding: 0.5em; /* 1em / 2 */
+  padding-left: 2.5em; /* 5em / 2 */
+  line-height: 1.5; /* 2 / 2 */
 }
 .location-paragraph {
   text-align: left;
-  /* padding: 1em; */
   grid-column: 2/5;
-  font-size: xx-large;
-  padding-right: 5em;
-  line-height: 2; /* Adds spacing between lines */
+  font-size: x-large; /* xx-large divided by 2 */
+  padding-right: 2.5em; /* 5em / 2 */
+  line-height: 1.5; /* 2 / 2 */
 }
 /* Extra tips section */
 .extra-tips {
@@ -313,5 +307,5 @@ _____________________________ locations section ________________________________
 }
 .extra-tips p {
   text-align: center;
-  font-size: large;
+  font-size: medium; /* large divided by 2 */
 }
