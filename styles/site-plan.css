@@ -1,29 +1,24 @@
 /* Font imports */
 @import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato');
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900|Oswald:wght@200..700');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900|Oswald:wght@200..700');
 
 /* Root variables */
 :root {
-  /* Change the values below to your colors from your palette */
   --primary-color: #A9ACA9;
   --secondary-color: #393424;
-  /* --accent1-color: #BA3F1D; */
   --accent2-color: white;
-
-  /* Change the values below to your chosen font(s) */
   --heading-font: Oswald, sans-serif;
   --paragraph-font: Barlow, Helvetica, sans-serif;
-
-  /* These colors below should be chosen from among your palette colors above */
-  --headline-color-on-white: #393424;  /* Headlines on a white background */
-  --headline-color-on-color: white;   /* Headlines on a colored background */
-  --paragraph-color-on-white: #393424; /* Paragraph text on a colored background */
-  /* --paragraph-background-color: #BA3F1D; */
+  --headline-color-on-white: #393424;
+  --headline-color-on-color: white;
+  --paragraph-color-on-white: #393424;
   --nav-link-color: #396E94;
   --nav-hover-link-color: white;
   --nav-background-color: #A9ACA9;
   --nav-hover-background-color: #393424;
+  --gray: #808080;
 }
+
 *,
 *::before,
 *::after {
@@ -31,78 +26,78 @@
 }
 
 body {
-  background-color: burlywood; /* Set the background color of the entire page */
-  font-family: 'Lato', sans-serif; /* Fallback font */
+  background-color: burlywood;
+  font-family: 'Lato', sans-serif;
 }
 
 .home-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 10px; /* Halved the gap */
+  gap: 10px;
   align-items: start;
-  padding: 10px; /* Halved the padding */
+  padding: 10px;
 }
 
 nav {
   display: flex;
   border-radius: 10px;
   text-align: center;
-  border: 2.5px solid black; /* Halved the border */
-  padding: 5px; /* Halved the padding */
+  border: 2.5px solid black;
+  padding: 5px;
 }
 
 .logo {
-  width: 75px; /* Halved the width */
-  height: 75px; /* Halved the height */
-  border-radius: 5px; /* Halved the border-radius */
+  width: 75px;
+  height: 75px;
+  border-radius: 5px;
 }
 
 nav a {
   text-align: center;
   color: black;
   text-decoration: none;
-  padding: 5px; /* Halved the padding */
-  border-radius: 5px; /* Halved the border-radius */
+  padding: 5px;
+  border-radius: 5px;
 }
 
 nav a:hover {
   text-decoration: underline;
 }
 
-:root {
-  --gray: #808080; /* Define your gray color here */
-}
-
-nav a:link, nav a:visited {
+nav a:link,
+nav a:visited {
   color: black;
 }
 
 .footer-words {
   color: black;
-  padding-top: 35px; /* Halved the padding */
-  margin-left: 50px; /* Halved the margin */
+  padding-top: 35px;
+  margin-left: 50px;
   font-weight: bold;
 }
 
 .footer-words a {
-  margin-right: 6em; /* Halved the margin */
-  font-size: large; /* Adjusted font size */
+  margin-right: 6em;
+  font-size: large;
 }
 
-.fish1, .fish2, .fish3, .fish4 {
-  border-radius: 12.5px; /* Halved the border-radius */
-  border: 3.75px solid black; /* Halved the border */
-  padding: 0; /* Reset padding */
+.fish1,
+.fish2,
+.fish3,
+.fish4 {
+  border-radius: 12.5px;
+  border: 3.75px solid black;
+  padding: 0;
 }
 
 .image-assortment {
   display: flex;
   justify-content: space-between;
-  padding: 0 10px; /* Halved the padding */
-  padding-bottom: 20px; /* Halved the padding */
+  padding: 0 10px 20px;
 }
 
-.title, .author {
+.title,
+.author {
   display: grid;
   justify-content: center;
   text-align: center;
@@ -110,12 +105,13 @@ nav a:link, nav a:visited {
 }
 
 .title {
-  font-size: 200%; /* Adjusted font size */
+  font-size: 200%; /* Adjusted to match species page */
+  padding-top: 0.5rem;
 }
 
 .author {
-  font-size: large; /* Adjusted font size */
-  padding-bottom: 100px; /* Halved the padding */
+  font-size: large;
+  padding-bottom: 100px;
 }
 
 .title-section .logo {
@@ -123,79 +119,83 @@ nav a:link, nav a:visited {
 }
 
 .welcome-paragraph {
-  font-size: large; /* Adjusted font size */
+  font-size: x-large; /* Adjusted to match species page */
   grid-column: 1 / 2;
-  margin-bottom: 10px; /* Halved the margin */
-  line-height: 1.25; /* Adjusts line height for readability */
+  margin-bottom: 10px;
+  line-height: 1.25;
+  padding-left: 2em;
 }
 
 .main-img {
   grid-column: 2 / 3;
   justify-content: center;
-  padding-bottom: 50px; /* Halved the padding */
+  padding-bottom: 50px;
+  padding-left: 10em;
 }
 
 .map {
-  border: 3.75px #393424; /* Halved the border */
+  border: 3.75px solid #393424;
   max-width: 60em;
   height: auto;
 }
 
 .rocky-border {
   border: 10px solid;
-  border-image: url('images/cropped-rocky-border.png') 15 round; /* Adjusted border image */
-  padding: 5px; /* Halved the padding */
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5); /* Halved the box shadow */
+  border-image: url('images/cropped-rocky-border.png') 15 round;
+  padding: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
 }
 
 /* Start Gear Page styles */
 
 .gear-item {
-  width: 22.5em; /* Halved the width */
-  height: 20em; /* Halved the height */
+  width: auto;
+  height: 35em;
   justify-content: center;
-  border-radius: 2.5%; /* Halved the border-radius */
+  border-radius: 2.5%;
   border: solid black;
   display: block;
-  margin: 0 auto; /* Centered the element */
+  margin: 0 auto;
 }
 
 .title-section {
   text-align: center;
-  padding-top: 0.5rem; /* Halved the padding */
-  font-size: 150%; /* Adjusted font size */
-  border-width: 0.5rem; /* Halved the border width */
+  padding-top: 0.5rem;
+  font-size: 200%; /* Adjusted to match species page */
+  border-width: 0.5rem;
 }
 
 .gear-intro {
-  padding-top: 1.25em; /* Halved the padding */
-  font-size: large; /* Adjusted font size */
-  margin: 37.5px; /* Halved the margin */
-  padding-bottom: 0.75em; /* Halved the padding */
+  padding-top: 1.25em;
+  font-size: x-large; /* Adjusted to match species page */
+  margin: 37.5px;
+  padding-bottom: 0.75em;
 }
 
-.gear-title, .species-title{
-  font-size: 300%;
+.gear-title,
+.species-title {
+  font-size: 200%;
+  padding: 2em 0 1.5em;
+  border-bottom: solid black 0.25em;
   padding-left: 2em;
-  padding-bottom: 1.5em;
-  padding-top: 1.5em;
-  border-bottom: solid black .25em;
-
 }
-
+.gear-title {
+  padding-top: 0.5rem;
+}
 .gear-paragraph {
-  padding-top: 0.5em; /* Halved the padding */
-  font-size: large; /* Adjusted font size */
+  padding-top: 0.5em;
+  font-size: x-large; /* Adjusted to match species page */
   text-align: center;
-  margin: 2.25em; /* Halved the margin */
+  margin: 2.25em;
 }
 
-/* ------------------------------------------ SPECIES PAGE ------------------------------------------------------------------ */
+/* Species Page styles */
 
 .species-page {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+
 .fish {
   width: 48em;
   height: auto;
@@ -203,42 +203,58 @@ nav a:link, nav a:visited {
   border-radius: 5rem;
 }
 
-/* .species-3 {
-  height: 40em;
-} */
 .species-title {
-  font-size: 400%; /* 300% / 2 */
-}
-.species-paragraph {
-  padding-top: 0.5em; /* 1em / 2 */
-  font-size: x-large; /* xx-large divided by 2 */
-  margin: 2.25em; /* 4.5em / 2 */
-  margin-left: auto;
-  padding: 0.75em; /* 1.5em / 2 */
-  grid-column: 1;
-  line-height: 1.5; /* 2 / 2 */
-}
-.species-title {
-  font-size: 150%; /* 300% / 2 */
+  font-size: 200%;
   text-align: center;
 }
 
-.container1, .container2, .container3, .container4, .container5, .container6, .container7, .container8 {
+.species-paragraph {
+  padding: 0.5em 0.75em;
+  font-size: x-large;
+  margin: 2.25em auto;
+  grid-column: 1;
+  line-height: 1.5;
+  padding-right: 2em;
+  /* /* justify-content: center;*\ */
+}
+
+.container1,
+.container2,
+.container3,
+.container4,
+.container5,
+.container6,
+.container7,
+.container8 {
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 20px;
   align-items: center;
 }
 
-.container1 .species-paragraph, .container2 .species-paragraph, .container3 .species-paragraph, .container4 .species-paragraph, .container5 .species-paragraph, .container6 .species-paragraph, .container7 .species-paragraph, .container8 .species-paragraph {
-  grid-column: 2/3;
+.container1 .species-paragraph,
+.container2 .species-paragraph,
+.container3 .species-paragraph,
+.container4 .species-paragraph,
+.container5 .species-paragraph,
+.container6 .species-paragraph,
+.container7 .species-paragraph,
+.container8 .species-paragraph {
+  grid-column: 2 / 3;
 }
 
-.container1 img, .container2 img, .container3 img, .container4 img, .container5 img, .container6 img, .container7 img, .container8 img {
-  grid-column: 1/2;
+.container1 img,
+.container2 img,
+.container3 img,
+.container4 img,
+.container5 img,
+.container6 img,
+.container7 img,
+.container8 img {
+  grid-column: 1 / 2;
 }
-/* 
-_____________________________ locations section _________________________________________________________ */
+
+/* Locations section */
 
 .locations {
   display: grid;
@@ -248,11 +264,13 @@ _____________________________ locations section ________________________________
 }
 
 .locations-title {
-  font-size: 2.5em; /* 5em / 2 */
+  font-size: 2.5em;
   margin-bottom: 1em;
 }
 
-.location-1, .location-2, .location-3 {
+.location-1,
+.location-2,
+.location-3 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   align-items: center;
@@ -262,11 +280,14 @@ _____________________________ locations section ________________________________
   border-radius: 2em;
 }
 
-.location-1 img, .location-2 img, .location-3 img {
-  height: 45em; /* 45em / 2 */
-  width: 50em; /* 50em / 2 */
+.location-1 img,
+.location-2 img,
+.location-3 img {
+  height: 22.5em;
+  width: 25em;
   border-radius: 1em;
 }
+
 .location-2 img {
   grid-column: 4 / 5;
   grid-row: 1;
@@ -279,25 +300,27 @@ _____________________________ locations section ________________________________
   align-self: center;
   justify-self: center;
   text-align: left;
-  padding: 0.5em; /* 1em / 2 */
-  padding-left: 2.5em; /* 5em / 2 */
-  line-height: 1.5; /* 2 / 2 */
+  padding: 0.5em 0 0 2.5em;
+  line-height: 1.5;
 }
+
 .location-paragraph {
   text-align: left;
-  grid-column: 2/5;
-  font-size: x-large; /* xx-large divided by 2 */
-  padding-right: 2.5em; /* 5em / 2 */
-  line-height: 1.5; /* 2 / 2 */
+  grid-column: 2 / 5;
+  font-size: x-large;
+  padding-right: 2.5em;
+  line-height: 1.5;
 }
+
 /* Extra tips section */
+
 .extra-tips {
   border: 1px solid #000;
   padding: 1em;
   text-align: center;
   box-sizing: border-box;
   margin-top: -1em;
-  width: 50em;
+  width: 25em;
 }
 
 .beaver-tip {
@@ -305,27 +328,29 @@ _____________________________ locations section ________________________________
   justify-content: flex-end;
   grid-column: 4 / 5;
 }
+
 .extra-tips p {
   text-align: center;
-  font-size: medium; /* large divided by 2 */
+  font-size: medium;
 }
 
-/* ---------------------------------------------------- contact us page --------------------------------------------------- */
+/* Contact us page */
+
 #contact-page {
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background-color: burlywood; /* Same as the body background color to blend in */
+  background-color: burlywood;
 }
 
 #contact-page form {
   display: inline-block;
-  padding: 2em; /* Increased padding for a larger form */
+  padding: 2em;
   border: 0.25em solid black;
   border-radius: 1em;
-  background-color: burlywood; /* Optional: set a background color for better visibility */
-  font-size: 2em; /* Twice the original font size */
+  background-color: burlywood;
+  font-size: 2em;
 }
 
 ul {
@@ -340,14 +365,14 @@ form li + li {
 
 label {
   display: inline-block;
-  min-width: 6em; /* Adjusted for em units */
+  min-width: 6em;
   text-align: right;
 }
 
 input,
 textarea {
   font: 1em sans-serif;
-  width: 15em; /* Adjusted for em units */
+  width: 15em;
   box-sizing: border-box;
   border: 1px solid black;
   background-color: lightgray;
@@ -360,16 +385,16 @@ textarea:focus {
 
 textarea {
   vertical-align: top;
-  height: 5em; /* Adjusted for em units */
+  height: 5em;
 }
 
 .button {
-  padding-left: 6em; /* same size as the label elements */
+  padding-left: 6em;
 }
 
 button {
   margin-left: 0.5em;
-  font-size: 1em; /* Ensure the button font size scales appropriately */
+  font-size: 1em;
 }
 
 #feedback {
@@ -383,7 +408,9 @@ button {
 .moveDown {
   margin-top: 3em;
 }
-/* ------------------------------- profile card -------------------------------------- */
+
+/* Profile card */
+
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 300px;
@@ -392,6 +419,7 @@ button {
   font-family: arial;
   background-color: white;
 }
+
 button {
   border: none;
   outline: 0;
