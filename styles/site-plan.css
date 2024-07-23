@@ -283,9 +283,10 @@ nav a:visited {
 .location-1 img,
 .location-2 img,
 .location-3 img {
-  height: 22.5em;
-  width: 25em;
+  height: 50em;
+  width: 52em;
   border-radius: 1em;
+
 }
 
 .location-2 img {
@@ -320,7 +321,7 @@ nav a:visited {
   text-align: center;
   box-sizing: border-box;
   margin-top: -1em;
-  width: 25em;
+  width: 52em;
 }
 
 .beaver-tip {
